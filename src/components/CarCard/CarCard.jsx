@@ -1,6 +1,7 @@
-import { CardBox, HeartBtn, Heart, CarImgBox, CarImg, CarCardTitle, TextName, CarBrandName, CarBrand, CarDescr, TextDescr } from './CarCard.styled';
-import sprite from '../../img/sprite.svg';
+import { CardBox, HeartBtn,  CarImgBox, CarImg, CarCardTitle, TextName, CarBrandName, CarBrand, CarDescr, TextDescr } from './CarCard.styled';
+
 import { Button } from '../common/Button/Button';
+import { FiHeart } from "react-icons/fi";
 
 export const CarCard = ({ id, img, make, model, rentalPrice, year, address, rentalCompany, mileage, type, functionalities }) => {
 
@@ -12,7 +13,7 @@ export const CarCard = ({ id, img, make, model, rentalPrice, year, address, rent
             <CarImgBox>
                 <CarImg src={img} alt={make} />
                 <HeartBtn type='button'>
-                     <Heart><use href={`${sprite}#icon-heart`}></use></Heart>
+                    <FiHeart style={{width: 18, height: 18, color: 'white'}} />
                 </HeartBtn>
             </CarImgBox>
             <CarCardTitle>
@@ -32,7 +33,7 @@ export const CarCard = ({ id, img, make, model, rentalPrice, year, address, rent
                 <TextDescr>{functionalities[1]}</TextDescr>
             </CarDescr>
           
-            <Button><p>Learn more</p></Button>
+            <Button style={{width: '100%', height: 44}}><p>Learn more</p></Button>
         </CardBox>
     );
 };

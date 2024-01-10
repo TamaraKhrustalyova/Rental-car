@@ -14,11 +14,6 @@ export const HeartBtn = styled.button`
     right: 14px;
 `;
 
-export const Heart = styled.svg`
-    width: 18px;
-    height: 18px;
-`;
-
 export const CarImgBox = styled.div`
     width: 274px;
     height:  268px;
