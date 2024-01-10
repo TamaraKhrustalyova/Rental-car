@@ -1,5 +1,9 @@
+import Modal from '../../components/Modal/Modal';
+
 const Favorites = () => {
-  return <h3>Pick a car right now</h3>;
+  return (
+    <Modal />
+  )
 };
 
 export default Favorites;

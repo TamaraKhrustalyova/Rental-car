@@ -3,6 +3,7 @@ import { Filter } from '../../components/common/Select/Select';
 import { Box } from './FilterSection.styled';
 import { options } from '../../data';
 import { CreatePrice } from "../../utils/createPrice";
+import { MileageRangeSearch } from '../MileageRange/Range';
 
 export const FilterSection = () => {
 
@@ -22,7 +23,7 @@ export const FilterSection = () => {
           width='125px'
       />
       
-      
+      <MileageRangeSearch />
 
       <Button
         style={{ width: 136, height: 48, marginTop: '15px' }}
